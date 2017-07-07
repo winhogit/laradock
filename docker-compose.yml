@@ -205,6 +205,7 @@ services:
         - "${MYSQL_PORT}:3306"
       networks:
         - backend
+      entrypoint: ['/entrypoint.sh', '--character-set-server=utf8', '--collation-server=utf8_general_ci']
 
 ### Percona Container #########################################
 
