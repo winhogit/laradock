@@ -6,3 +6,7 @@
 .docker-sync
 /jenkins/jenkins_home
 /nginx/ssl/*
+.DS_Store
+nginx/.DS_Store
+nginx/sites/.DS_Store
+workspace/.DS_Store
