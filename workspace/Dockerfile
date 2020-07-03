@@ -723,6 +723,10 @@ RUN if [ ${NPM_REGISTRY} ]; then \
     . ~/.bashrc && npm config set registry ${NPM_REGISTRY} \
 ;fi
 
+# Install pm2
+RUN if [ ${INSTALL_NODE} = true ]; then \
+    npm install -g pm2 \
+;fi
 
 ###########################################################################
 # PNPM:
